@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.header
+		{
+			display: grid;
+			grid-template-columns: 2fr 6fr 2fr;
+			
+			grid-template-rows: 80px;
+			text-align: center;
+			line-height:80px ;
+		}
+		.header .x 
+		{
+
+			
+		}
+
+		.header li 
+		{
+			list-style: none;
+			display: inline;
+			margin-right: 10px;
+		}
+
+		.header a 
+		{
+			text-decoration: none;
+			color: blue;
+			font-weight: bold;
+		}
+
+		.header button 
+		{
+			background: darkred;
+			padding: 9px 14px;
+			border: none;
+			border-radius: 5px;
+			color: white;
+			font-weight: bold;
+		}
+
+		.header .t {
+			padding-left: 30px;
+			padding-top: 5px;
+		}
+
+		.banner
+		{
+			display: grid;
+
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 350px;
+
+			background: #1a5ca3;
+		}
+
+		.banner .p1
+		{
+			
+			padding-top: 80px;
+			padding-left: 100px;
+		}
+
+		@media(max-width: 500px)
+		{
+			.header{display: flex;flex-direction: column;}
+			.header a {font-size: 10px;}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+
+		<div class="x t">
+			<img src="https://www.dominos.co.in/assets/Logo.png">
+		</div>
+
+
+		<div class="x">
+			
+			<ul>
+				<li><a href="">OUR MENU</a></li>
+				<li><a href="">DOMINO'S STORES</a></li>
+				<li><a href="">GIFT CARD</a></li>
+				<li><a href="">CORPORATE ENQUIRY</a></li>
+				<li><a href="">CONTACT</a></li>
+			</ul>
+
+		</div>
+
+
+		<div class="x">
+			<button>Download App</button>
+		</div>
+
+	</div>
+
+
+	<div class="banner">
+
+		<div class="p1">
+			
+			<h1>Domino's online ordering</h1>
+			<p>Yummy pizza delivered fast & fresh</p>
+			<p style="margin-top: 20px;margin-bottom: 20px;">
+				<button>ORDER ONLINE NOW</button>
+			</p>
+
+			<p><img src="https://www.dominos.co.in/assets/banner_brand_20210922.jpg"></p>
+
+		</div>
+		<div class="p1">
+			
+			<img src="https://www.dominos.co.in/assets/header_bg.png" height="100%" width="100%">
+		</div>
+		
+	</div>
+
+</body>
+</html>

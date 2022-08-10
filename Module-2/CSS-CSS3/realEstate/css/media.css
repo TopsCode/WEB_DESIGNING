@@ -1,0 +1,35 @@
+@media (max-width: 1100px)
+{
+	.header .info .logo{width: 30%}
+	.header .info .links{width: 70%}
+
+	.property-list .list_1 .property-info{width: 50%}
+}
+
+@media (max-width: 900px)
+{
+	.header .info .logo{width: 50%}
+	.header .info .links{width: 50%}
+
+	.property-list .list_1 .property-info{width: 25%}
+}
+
+
+@media (max-width: 700px)
+{
+	.header .info .logo{width: 15%}
+	.header .info .links{width: 85%}
+
+	.property-list .list_1 .a{width: 40%}
+	.property-list .list_1 .b{width: 60%}
+	.property-list .list_1 .c{width: 100%}
+	.property-list .list_1 .d{width: 100%}
+}
+
+@media (max-width: 500px)
+{
+	.header .info .logo{width: 100%}
+	.header .info .links{width: 100%}
+	.header .slider_info{padding-top: 0;padding-left: 0}
+	.property-list .list_1 .property-info{width: 100%}
+}

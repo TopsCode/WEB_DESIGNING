@@ -1,0 +1,76 @@
+*{box-sizing: border-box;margin: 0;padding: 0}
+.header
+{
+	height: auto;
+	background: lightblue;
+}
+.header .info
+{
+	height: auto;
+	background: lightgray;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header .info .logo
+{
+	height: 150px;
+	background: green;
+	width: 15%;
+}
+
+.header .info .links
+{
+	height: 150px;
+	background: blue;
+	width: 85%;
+}
+
+.header .slider_info
+{
+	height: 450px;
+	background: slateblue;
+	padding-top: 50px;
+	padding-left: 100px;
+}
+.header .slider_info .card
+{
+	height: 350px;
+	width: 450px;
+	background: black;
+
+}
+
+.property-list 
+{
+	height: 700px;
+	background: gray;
+}
+
+.property-list .about
+{
+	height: 100px;
+	background: lightblue;
+}
+
+.property-list .list_1
+{
+	height: auto;
+	background: blue;
+	display: flex;
+	flex-wrap: wrap;
+}
+.property-list .list_1 .property-info
+{
+	height: 300px;
+	width: 25%;
+	border: 3px solid yellow;
+}
+.property-list .list_1 .a,.b,.c,.d
+{
+	height: 300px;
+	width: 25%;
+}
+
+

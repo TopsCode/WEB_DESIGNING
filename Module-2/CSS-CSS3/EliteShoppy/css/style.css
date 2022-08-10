@@ -1,0 +1,130 @@
+body
+{
+	margin: 0;
+}
+
+.header
+{
+	height: 50px;
+	background-color: black;
+	display: flex;
+	text-align: center;
+	line-height: 50px;
+	color: white;
+}
+
+.header .black1
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+}
+.header .signIn
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+	border-right: 1px solid lightgray;
+
+}
+.header .signUp
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+	border-right: 1px solid lightgray;
+}
+
+.header .call
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+	border-right: 1px solid lightgray;
+}
+
+.header .info
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+	border-right: 1px solid lightgray;
+}
+
+.header .black2
+{
+	height: 50px;
+	width: 16.66%;
+	background:;
+}
+
+.header i 
+{
+	color: #2fdab8;
+}
+
+.subheader
+{
+	height: 150px;
+	background-color: gray;
+
+	display: flex;
+
+}
+
+.subheader .search
+{
+	height: 150px;
+	width: 33.33%;
+	background-color: lightblue;
+	text-align: center;
+	line-height: 150px;
+}
+
+.subheader .search input
+{
+	height: 40px;
+	width: 80%;
+	border: none;
+}
+
+.subheader .search input:focus
+
+{
+	outline: none;
+}
+
+.subheader .search button
+{
+	height: 40px;
+	border: none;
+	padding: 5px 10px;
+	
+}
+
+
+.subheader .logo
+{
+	height: 150px;
+	width: 33.33%;
+	background-color: lightcoral;
+}
+
+.subheader .logo span
+{
+	font-size: 30px;
+}
+
+.subheader .social
+{
+	height: 150px;
+	width: 33.33%;
+	background-color: lightblue;
+}
+
+.fa-instagram
+{
+	background:#f46f30;
+	padding: 10px;
+}
+
