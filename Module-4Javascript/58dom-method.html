@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- ====    is sabhi ko ham dom ki method bolte he    ====== -->
+
+        <h1 id="h1">heading 1</h1>
+
+        <h2 class="h1"> heading 2</h2>
+        <h2 class="h1"> heading 2</h2>
+        <h2 class="h1"> heading 2</h2>
+        <h2 class="h1"> heading 2</h2>
+
+        <span id="sp">sp 1</span>
+        <span id="sp">sp 1</span>
+        <span id="sp">sp 1</span>
+        <span id="sp">sp 1</span>
+
+        <h3>Heading 3</h3>
+        <h3>Heading 3</h3>
+        <h3>Heading 3</h3>
+        <h3>Heading 3</h3>
+
+        <p name="para">para 1</p>
+        <p name="para">para 1</p>
+        <p name="para">para 1</p>
+
+        <p>para 1</p>
+        <p>para 1</p>
+
+        <b class="c1">BOLD CLASS</b>
+        <b id="c1">BOLD ID</b>
+
+        <script>
+
+        p = document.querySelector('.c1')
+        console.log(p)
+        // jab ham .(dot) claas ka upaug karate he tab usko qurerySelector bolate he 
+
+        q = document.querySelector('#c1')
+        console.log(q)
+
+        // jab ham #(hes) id ka upaug karate he tab usko urerySelector bolate he 
+
+
+        getClass =  document.querySelectorAll(".h1")
+        console.log(getClass)
+
+        // is me ham getclaas ko karavate he 
+
+
+        getId =  document.querySelectorAll("#sp")
+        console.log(getId)
+
+        // is me grtid se karavate he
+
+        x= document.getElementById('h1');
+        console.log(x)
+
+        // is ke inder pure ka pura h1 teg milata he
+
+        // or getElementById tabhi li jati he koi bhi one id ko get karvana ho tabhi is ka upayog hota he
+
+        y = document.getElementsByClassName('h1');
+        console.log(y)
+
+        // getElementsByClassName or querySelector dono ak jese he 
+
+        z = document.getElementsByTagName('h3');
+        console.log(z)
+
+        // is ke ander teg ka name likha jata he or iske ander teg ka name pata chalata he
+
+        a = document.getElementsByName('para')
+        console.log(a)
+
+        // is ke ander ham claas ke jagah ham name ka upayog karate he or is ke ander bhi teg ka name pata chalata he
+
+    </script>
+
+    </body>
+</html>
