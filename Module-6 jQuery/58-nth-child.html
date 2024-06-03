@@ -1,0 +1,57 @@
+<html>  
+<head>  
+<title> jQuery :nth-child selector </title>  
+  
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+</head>  
+<body>  
+  
+<h1> Welcome to the Tops Technologies.com </h1>  
+<h2> It is an example of using the jQuery :nth-child selector. </h2>  
+<ul>  
+    <li> 1 </li>  
+    <li> 2 </li>  
+    <li> 3 </li>  
+    <li> 4 </li>  
+    <li> 5 </li>  
+    <li> 6 </li>  
+    <li> 7 </li>  
+    <li> 8 </li>  
+    <li> 9 </li>  
+    <li> 10 </li>  
+</ul>  
+<br/>  
+  
+<p> Click the following buttons to see the effect. </p>  
+<button id = "n"> :nth-child(7) </button>  
+<button id = "odd"> Odd </button>  
+<button id = "even"> Even </button>  
+<button id = "formula"> :nth-child(4n+4) </button>  
+  
+<script>  
+$(document).ready(function(){  
+    $("#n").click(function () {  
+    $("li:nth-child(7)").css("background-color", "yellow");      
+    });  
+      
+    $("#odd").click(function () {  
+    $("li").css("background-color", "white");  
+    $("li:nth-child(odd)").css("background-color", "orange");      
+    });  
+      
+    $("#even").click(function () {  
+    $("li").css("background-color", "white");  
+    $("li:nth-child(even)").css("background-color", "lightgreen");      
+    });  
+      
+    $("#formula").click(function () {  
+    $("li").css("background-color", "white");  
+    $("li:nth-child(4n+4)").css("background-color", "lightblue");      
+      
+    });  
+      
+    });  
+</script>  
+  
+</body>  
+</html>

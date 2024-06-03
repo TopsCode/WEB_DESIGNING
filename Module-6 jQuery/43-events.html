@@ -1,0 +1,40 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<style>  
+    span {  
+      display: none;  
+    }  
+    </style>
+<script>
+  
+$(document).ready(function(){  
+    $("p").click(function(){  
+        alert("This paragraph was clicked.");  
+    });  
+
+    // $("p").bind("click", function(){  
+    //     alert("This paragraph was clicked.");  
+    // }); 
+    $("input").blur(function(){  
+        alert("This text box has lost its focus.");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Click on the statement.</p>  
+Enter your name: <input type="text">  
+
+
+<!-- <p><input type="text"> <span>Focus starts.. Write your name.</span></p>  
+<p><input type="password"> <span>Focus starts.. Write your password.</span></p> -->
+<!-- 
+<script>  
+    $( "input" ).focus(function() {  
+      $( this ).next( "span" ).css( "display", "inline" ).fadeOut( 2000 );  
+    });  
+    </script> -->
+</body>  
+</html>  

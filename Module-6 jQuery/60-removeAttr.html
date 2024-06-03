@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>  
+jQuery removeAttr() method  
+</title>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"> </script>  
+  
+<script>  
+$(document).ready(function() {  
+$("button").click(function() {  
+$("p").removeAttr("class");  
+});  
+});  
+</script>  
+  <style>  
+.jtp {  
+color: red;  
+background-color: yellow;  
+border: 2px dashed blue;  
+font-size: 25px;  
+}  
+</style>  
+</head>  
+<body>  
+<h1>  
+Welcome to the Tops Technologies.com  
+</h1>  
+  
+<h2>  
+Example of the jQuery removeAttr() Method  
+</h2>  
+  
+<p id = "para" class = "jtp">  
+This is first paragraph element.  
+</p>  
+<p id = "para1" class = "jtp">  
+This is second paragraph element.  
+</p>  
+<p> Click the following button to see the effect. </p>  
+  
+<button>  
+Click me  
+</button>  
+  
+</body>  
+  
+</html>  

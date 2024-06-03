@@ -1,0 +1,45 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title> jQuery replaceWith() method </title>  
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>  
+  
+  
+<style>  
+div {  
+border: 2px dashed blue;  
+width: auto;  
+margin: 8px;  
+font-size: 23px;  
+text-align: center;  
+}  
+h1, h2{  
+background-color: yellow;  
+color: blue;  
+}  
+#d3{  
+border: 2px solid blue;  
+width: 150px;  
+height: 15px;  
+}  
+</style>  
+</head>  
+<body>  
+<p> This is an example of using the jQuery replaceWith() method. </p>  
+<div id = "d1"> This is a div element </div>  
+<div id = "d2"> This is another div element. </div>  
+<p id = "p1"> Click the following button to see the effect </p>  
+<button id = "btn"> Click me </button>  
+<script>  
+$(document).ready(function(){  
+$("button").click(function() {  
+$("#d1").replaceWith("<h1> Hello world :) </h1>");  
+$("#d2").replaceWith("<h2> Welcome to the Tops Technologies.com </h2>");  
+$("#p1").replaceWith("<p> This is a paragraph element </p>");  
+$("#btn").replaceWith("<div id = 'd3'> </div>");  
+});  
+});  
+</script>  
+  
+</body>  
+</html>

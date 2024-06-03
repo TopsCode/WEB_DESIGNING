@@ -1,0 +1,40 @@
+<html>  
+  
+<head>  
+<style>  
+div{  
+border: 2px solid black;  
+}  
+.d1 *{  
+display: block;  
+border: 2px solid black;  
+color: black;  
+padding: 5px;  
+margin: 15px;  
+}  
+</style>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>  
+<script>  
+$(document).ready(function() {  
+$("button").click(function() {  
+$("span").siblings().css({ "color": "red", "border": "2px dashed blue"});  
+});  
+});  
+</script>  
+</head>  
+  
+<body>  
+<h4> This is an example of using the jQuery's siblings() method. </h4>  
+<div class = "d1">  
+This is parent div element  
+<p> This is first paragraph </p>  
+<p> This is second paragraph </p>  
+<span> This is span </span>  
+<h4> This is heading h4 </h4>  
+<h2>This is heading h2 </h2>  
+</div>  
+<p> Click the following button to get the siblings. </p>  
+<button> Click me </button>  
+</body>  
+  
+</html>
