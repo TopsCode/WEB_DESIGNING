@@ -1,0 +1,15 @@
+$primary-color: #3498db;
+
+.light-primary {
+  background-color: lighten($primary-color, 20%);
+}
+
+.dark-primary {
+  background-color: darken($primary-color, 20%);
+}
+
+$base-color: #ff6600;
+
+.adjusted-color {
+  background-color: adjust-hue($base-color, 45deg);
+}

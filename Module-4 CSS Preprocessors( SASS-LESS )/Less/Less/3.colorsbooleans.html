@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Switcher</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="theme-switcher light">
+    <button onclick="toggleTheme()">Switch Theme</button>
+    <div class="element">
+      <h2>Theme Switcher Example</h2>
+      <p>This is a paragraph with some text.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const themeSwitcher = document.querySelector('.theme-switcher');
+      themeSwitcher.classList.toggle('light');
+      themeSwitcher.classList.toggle('dark');
+    }
+  </script>
+
+</body>
+</html>

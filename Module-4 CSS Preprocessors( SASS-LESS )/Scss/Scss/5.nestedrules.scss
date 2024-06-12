@@ -1,0 +1,22 @@
+// Using nulls in Sass
+$show-child: true;
+
+.parent {
+  color: blue;
+
+  @if $show-child {
+    .child {
+      font-weight: bold;
+    }
+  }
+}
+
+// Nested rules in Sass
+.parent {
+    color: blue;
+  
+    .child {
+      font-weight: bold;
+    }
+  }
+  

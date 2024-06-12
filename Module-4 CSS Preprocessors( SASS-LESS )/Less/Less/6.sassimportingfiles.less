@@ -1,0 +1,68 @@
+// styles/
+// ├── main.less
+// ├── _variables.less
+// ├── _buttons.less
+// └── _layout.less
+
+/* _variables.less */
+@primary-color: #3498db;
+@secondary-color: #2ecc71;
+
+
+/* _buttons.less */
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.btn {
+  background-color: @primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  .border-radius(5px);
+}
+
+.btn-primary {
+  background-color: @primary-color;
+}
+
+.btn-secondary {
+  background-color: @secondary-color;
+}
+
+/* _layout.less */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* main.less */
+// @import 'variables';
+// @import 'buttons';
+// @import 'layout';
+
+
+//run this command -- sass main.less output.css
+
+/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <div class="container">
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+  </div>
+</body>
+</html>
+
+
+*/

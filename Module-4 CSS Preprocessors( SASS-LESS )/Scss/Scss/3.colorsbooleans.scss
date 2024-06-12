@@ -1,0 +1,48 @@
+// Define Sass variables for colors
+$primary-color-light: #3498db;
+$primary-color-dark: #2c3e50;
+$secondary-color-light: #f39c12;
+$secondary-color-dark: #e74c3c;
+
+// Define Sass variable for border visibility
+$show-border: true;
+
+// Common styles for elements
+.element {
+  padding: 10px;
+  
+  // Apply border if $show-border is true
+  @if $show-border {
+    border: 1px solid #ccc;
+  }
+}
+
+// Light theme styles
+.light-theme {
+  background-color: #fff;
+  color: #333;
+  .button {
+    background-color: $primary-color-light;
+    color: white;
+  }
+}
+
+// Dark theme styles
+.dark-theme {
+  background-color: #222;
+  color: #eee;
+  .button {
+    background-color: $primary-color-dark;
+    color: white;
+  }
+}
+
+// Apply theme styles based on theme variable
+.theme-switcher {
+  &.light {
+    @extend .light-theme;
+  }
+  &.dark {
+    @extend .dark-theme;
+  }
+}

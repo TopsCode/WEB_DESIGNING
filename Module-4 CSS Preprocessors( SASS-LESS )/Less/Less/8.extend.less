@@ -1,0 +1,40 @@
+// Mixin example
+.text {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hello {
+    .text;
+}
+
+.world {
+    .text;
+}
+
+// Extend example:
+
+.button-format {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+}
+
+.toolbar-button {
+    .button-format;
+    background-color: lightpink;
+
+    &:hover {
+        background-color: rgb(155, 106, 114);
+    }
+}
+
+.status-bar-button {
+    .button-format;
+    background-color: lightblue;
+
+    &:hover {
+        background-color: blue;
+    }
+}

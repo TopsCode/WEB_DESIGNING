@@ -1,0 +1,7 @@
+$base-padding: 10px;
+$padding-multiplier: 1.5;
+
+.element {
+  padding: $base-padding * $padding-multiplier;
+  width: 100% / 3;
+}

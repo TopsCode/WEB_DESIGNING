@@ -1,0 +1,9 @@
+@colors: red, green, blue;
+
+.color-list {
+  color: extract(@colors, 2); // Accesses the second color in the list (green)
+}
+
+.color-count::before {
+  content: length(@colors); // Gets the number of elements in the list (3)
+}

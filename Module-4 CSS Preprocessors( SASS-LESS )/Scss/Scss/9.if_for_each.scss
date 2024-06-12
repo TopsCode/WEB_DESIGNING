@@ -1,0 +1,50 @@
+$theme: dark;
+
+.button {
+  @if $theme == light {
+    background-color: #fff;
+    color: #000;
+  } @else if $theme == dark {
+    background-color: #000;
+    color: #fff;
+  } @else {
+    background-color: gray;
+    color: white;
+  }
+}
+
+
+
+@for $i from 1 through 5 {
+    .column-#{$i} {
+      width: 20% * $i;
+    }
+  }
+
+
+  $colors: (red, green, blue, yellow, purple);
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: $color;
+  }
+}
+
+/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sass Control Directives Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="button-light">Light Button</button>
+  <button class="button-dark">Dark Button</button>
+  <button class="button-gray">Gray Button</button>
+</body>
+</html>
+
+
+*/

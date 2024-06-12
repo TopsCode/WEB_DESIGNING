@@ -1,0 +1,24 @@
+// Using guards in LESS
+@show-child: true;
+
+.parent {
+  color: blue;
+
+  .child {
+    .show-child();
+  }
+}
+
+// Mixin for conditional child styles
+.show-child() when (@show-child = true) {
+  font-weight: bold;
+}
+
+// Nested rules in LESS
+.parent {
+  color: blue;
+
+  .child {
+    font-weight: bold;
+  }
+}

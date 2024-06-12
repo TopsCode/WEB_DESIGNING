@@ -1,0 +1,7 @@
+@base-class: "button";
+
+.button-class {
+  &::before {
+    content: "@{base-class}-active";
+  }
+}

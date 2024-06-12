@@ -1,0 +1,58 @@
+// styles/
+// ├── main.scss
+// ├── _variables.scss
+// ├── _buttons.scss
+// └── _layout.scss
+
+/* _variables.scss */
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+/* _buttons.scss */
+.btn {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+}
+
+.btn-secondary {
+  background-color: $secondary-color;
+}
+
+/* _layout.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* main.scss */
+// @import 'variables';
+// @import 'buttons';
+// @import 'layout';
+
+
+//run this command -- sass main.scss output.css
+
+/*
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body>
+  <!-- Your HTML content -->
+</body>
+</html>
+
+
+*/

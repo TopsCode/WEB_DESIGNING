@@ -1,0 +1,49 @@
+// Define LESS variables for colors
+@primary-color-light: #3498db;
+@primary-color-dark: #2c3e50;
+@secondary-color-light: #f39c12;
+@secondary-color-dark: #e74c3c;
+
+// Define LESS variable for border visibility
+@show-border: true;
+
+// Mixin for border visibility
+.border-mixin() when (@show-border = true) {
+  border: 1px solid #ccc;
+}
+
+// Common styles for elements
+.element {
+  padding: 10px;
+  .border-mixin();
+}
+
+// Light theme styles
+.light-theme {
+  background-color: #fff;
+  color: #333;
+  .button {
+    background-color: @primary-color-light;
+    color: white;
+  }
+}
+
+// Dark theme styles
+.dark-theme {
+  background-color: #222;
+  color: #eee;
+  .button {
+    background-color: @primary-color-dark;
+    color: white;
+  }
+}
+
+// Apply theme styles based on theme class
+.theme-switcher {
+  &.light {
+    .light-theme();
+  }
+  &.dark {
+    .dark-theme();
+  }
+}
