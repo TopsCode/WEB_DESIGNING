@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Color Example</title>
+    <style>
+        .gradient-background {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5em;
+            border: 2px solid #feb47b;
+            margin-bottom: 20px;
+        }
+
+        /* Linear Gradient */
+        .linear-gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient from left to right */
+        }
+
+        /* Radial Gradient */
+        .radial-gradient {
+            background: radial-gradient(circle, #ff7e5f, #feb47b); /* Radial gradient */
+        }
+
+        /* Diagonal Gradient */
+        .diagonal-gradient {
+            background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Diagonal gradient */
+        }
+
+        /* Gradient with Color Stops */
+        .color-stops-gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b, #4ca1af); /* Gradient with color stops */
+        }
+
+        /* Radial Gradient with Different Shape */
+        .radial-shape-gradient {
+            background: radial-gradient(ellipse at center, #ff7e5f, #feb47b); /* Radial gradient with ellipse shape */
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-background linear-gradient">
+        Linear Gradient Background
+    </div>
+
+    <div class="gradient-background radial-gradient">
+        Radial Gradient Background
+    </div>
+
+    <div class="gradient-background diagonal-gradient">
+        Diagonal Gradient Background
+    </div>
+
+    <div class="gradient-background color-stops-gradient">
+        Gradient with Color Stops
+    </div>
+
+    <div class="gradient-background radial-shape-gradient">
+        Radial Gradient with Different Shape
+    </div>
+</body>
+</html>

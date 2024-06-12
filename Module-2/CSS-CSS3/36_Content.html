@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Content Property Example</title>
+    <style>
+        .content-example::before {
+            content: "Note: ";
+            font-weight: bold;
+            color: red;
+        }
+
+        .content-example::after {
+            content: " - End of message.";
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<p class="content-example">This is an important message.</p>
+
+</body>
+</html>

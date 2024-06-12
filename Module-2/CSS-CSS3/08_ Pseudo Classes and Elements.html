@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo Classes and Elements Example</title>
+    <style>
+        /* Pseudo-class :hover */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-class :nth-child */
+        p:nth-child(odd) {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        /* Pseudo-class :not */
+        p:not(.special) {
+            font-style: italic;
+        }
+
+        /* Pseudo-element ::before */
+        p::before {
+            content: "Before text: ";
+            font-weight: bold;
+        }
+
+        /* Pseudo-element ::after */
+        p::after {
+            content: " (after text)";
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#">Hover over me</a>
+
+<p>First paragraph</p>
+<p class="special">Second paragraph (special class)</p>
+<p>Third paragraph</p>
+
+</body>
+</html>

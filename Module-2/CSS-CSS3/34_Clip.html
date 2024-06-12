@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Clip Property Example</title>
+    <style>
+        .clip-example {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .clip-example img {
+            position: absolute;
+            clip: rect(50px, 150px, 150px, 50px); /* rect(top, right, bottom, left) */
+        }
+    </style>
+</head>
+<body>
+
+<div class="clip-example">
+    <img src="https://via.placeholder.com/200" alt="Clipped Image">
+</div>
+
+</body>
+</html>

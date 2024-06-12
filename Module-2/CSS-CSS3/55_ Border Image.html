@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image Example</title>
+    <style>
+        .border-image-box {
+            width: 300px;
+            height: 200px;
+            border: 20px solid transparent;
+            border-image-source: url('https://via.placeholder.com/30'); /* Using a placeholder image */
+            border-image-slice: 10; /* Slicing the border image */
+            border-image-width: 20px; /* Width of the border */
+            border-image-outset: 0; /* Outset value for the border */
+            border-image-repeat: stretch; /* Stretch the border image */
+        }
+    </style>
+</head>
+<body>
+    <div class="border-image-box">
+        Border Image Box
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .intro {
+            font-size: 20px;
+        }
+
+        /* ID Selector */
+        #main-heading {
+            text-align: center;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            font-weight: bold;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            color: red;
+        }
+
+        /* Pseudo-element Selector */
+        p::first-line {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="main-heading">Welcome to My Website</h1>
+
+<div class="intro">
+    <p>This is a paragraph with some <a href="#">link</a>.</p>
+    <p>Another paragraph.</p>
+</div>
+
+<input type="text" placeholder="Enter your name">
+
+<div>
+    <p>This paragraph is styled differently because it's inside a div.</p>
+</div>
+
+<h2>Subtitle</h2>
+<p>This paragraph has bold text because it is an adjacent sibling to the h2.</p>
+
+</body>
+</html>

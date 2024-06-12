@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                background-color: lightcoral;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                background-color: lightgreen;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Responsive Design with Media Queries</h1>
+    <p>Resize the browser window to see the background color change based on the screen width.</p>
+</div>
+
+</body>
+</html>

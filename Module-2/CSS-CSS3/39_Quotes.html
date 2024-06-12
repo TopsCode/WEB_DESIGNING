@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Quotes Example</title>
+    <style>
+        blockquote {
+            quotes: "“" "”" "‘" "’";
+        }
+
+        blockquote:before {
+            content: open-quote;
+        }
+
+        blockquote:after {
+            content: close-quote;
+        }
+    </style>
+</head>
+<body>
+
+<blockquote>This is a blockquote with custom quotes.</blockquote>
+
+</body>
+</html>
