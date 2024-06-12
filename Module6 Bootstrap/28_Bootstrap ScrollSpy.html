@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap ScrollSpy Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the ScrollSpy example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-section {
+            height: 600px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .custom-menu {
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-menu li {
+            margin-bottom: 10px;
+        }
+
+        .custom-menu a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .custom-menu a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<div class="container custom-container">
+    <h2>Bootstrap ScrollSpy Example</h2>
+
+    <div id="section1" class="custom-section">
+        <h3>Section 1</h3>
+        <p>This is the first section.</p>
+    </div>
+
+    <div id="section2" class="custom-section">
+        <h3>Section 2</h3>
+        <p>This is the second section.</p>
+    </div>
+
+    <div id="section3" class="custom-section">
+        <h3>Section 3</h3>
+        <p>This is the third section.</p>
+    </div>
+
+    <div id="section4" class="custom-section">
+        <h3>Section 4</h3>
+        <p>This is the fourth section.</p>
+    </div>
+
+    <ul class="custom-menu" id="navbar">
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+    </ul>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('body').scrollspy({ target: '#navbar' });
+
+        // Add smooth scrolling on all links inside the navbar
+        $("#navbar a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        // Highlight the active link on scroll
+        $(window).scroll(function() {
+            var scrollDistance = $(window).scrollTop();
+
+            $('.custom-section').each(function(i) {
+                if ($(this).position().top <= scrollDistance) {
+                    $('#navbar a.active').removeClass('active');
+                    $('#navbar a').eq(i).addClass('active');
+                }
+            });
+        }).scroll();
+    });
+</script>
+</body>
+</html>

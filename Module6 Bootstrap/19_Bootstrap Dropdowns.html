@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Dropdowns Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the dropdown example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-dropdown {
+            margin-bottom: 10px;
+        }
+
+        .custom-dropdown .dropdown-menu {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .custom-dropdown .dropdown-item {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        .custom-dropdown .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .custom-dropdown .dropdown-divider {
+            margin: 0;
+        }
+
+        .custom-dropdown .dropdown-header {
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 10px 10px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Dropdowns Example</h2>
+    <p>Click the dropdown buttons to see dropdown menus.</p>
+
+    <div class="dropdown custom-dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown 1
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <h6 class="dropdown-header">Dropdown Menu 1</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
+    <div class="dropdown custom-dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown 2
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+            <h6 class="dropdown-header">Dropdown Menu 2</h6>
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

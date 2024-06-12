@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Stateful Buttons Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the stateful buttons example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-btn-group {
+            margin-bottom: 10px;
+        }
+
+        .custom-btn-group .btn {
+            transition: all 0.3s;
+        }
+
+        .custom-btn-group .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Stateful Buttons Example</h2>
+    <p>Click the buttons below to see stateful buttons.</p>
+
+    <div class="custom-btn-group btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Like
+        </button>
+        <button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Dislike
+        </button>
+    </div>
+
+    <div class="custom-btn-group btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-success" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Follow
+        </button>
+        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Unfollow
+        </button>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

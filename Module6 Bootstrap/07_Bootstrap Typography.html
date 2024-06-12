@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Typography Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the typography example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-heading {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .custom-paragraph {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .custom-text-muted {
+            color: #6c757d;
+        }
+
+        .custom-text-uppercase {
+            text-transform: uppercase;
+        }
+
+        .custom-text-lowercase {
+            text-transform: lowercase;
+        }
+
+        .custom-text-capitalize {
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="custom-heading">Bootstrap Typography Example</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Headings</h5>
+            <h1>h1. Bootstrap heading</h1>
+            <h2>h2. Bootstrap heading</h2>
+            <h3>h3. Bootstrap heading</h3>
+            <h4>h4. Bootstrap heading</h4>
+            <h5>h5. Bootstrap heading</h5>
+            <h6>h6. Bootstrap heading</h6>
+        </div>
+        <div class="col-md-6">
+            <h5>Paragraphs</h5>
+            <p class="custom-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nisl tellus. Aliquam varius leo quis ex tristique, id fringilla urna dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi et ex at leo lobortis elementum.</p>
+            <p class="custom-paragraph custom-text-muted">Nullam in nisl tellus. Aliquam varius leo quis ex tristique, id fringilla urna dapibus.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Text Transform</h5>
+            <p class="custom-text-uppercase">This text is uppercase</p>
+            <p class="custom-text-lowercase">THIS TEXT IS LOWERCASE</p>
+            <p class="custom-text-capitalize">tHiS TeXT iS caPiTaLiZeD</p>
+        </div>
+        <div class="col-md-6">
+            <h5>Text Alignment</h5>
+            <p class="text-left">Left aligned text.</p>
+            <p class="text-center">Center aligned text.</p>
+            <p class="text-right">Right aligned text.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

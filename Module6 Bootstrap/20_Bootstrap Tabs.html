@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Tabs Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the tabs example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-tabs .nav-link {
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: #6c757d;
+            font-weight: bold;
+        }
+
+        .custom-tabs .nav-link.active {
+            color: #007bff;
+            border-color: #007bff;
+        }
+
+        .custom-tabs .tab-content {
+            padding-top: 20px;
+        }
+
+        .custom-tabs .tab-pane {
+            border: 1px solid #dee2e6;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            padding: 20px;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Tabs Example</h2>
+    <p>Click the tabs below to switch between different content.</p>
+
+    <ul class="nav nav-tabs custom-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Tab 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Tab 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Tab 3</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <h3>Tab 1 Content</h3>
+            <p>This is the content of Tab 1.</p>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h3>Tab 2 Content</h3>
+            <p>This is the content of Tab 2.</p>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <h3>Tab 3 Content</h3>
+            <p>This is the content of Tab 3.</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

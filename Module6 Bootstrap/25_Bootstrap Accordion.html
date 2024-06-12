@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Accordion Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the accordion example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-accordion .card {
+            margin-bottom: 10px;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-accordion .card-header {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .custom-accordion .card-header:hover {
+            background-color: #0056b3;
+        }
+
+        .custom-accordion .card-header h5 {
+            margin-bottom: 0;
+            font-size: 1.25rem;
+        }
+
+        .custom-accordion .card-body {
+            padding: 15px;
+        }
+
+        .custom-accordion .card-body p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Accordion Example</h2>
+    <p>Click on the headers below to expand/collapse the accordion items.</p>
+
+    <div class="custom-accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0">
+                    Accordion Item #1
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>This is the content for Accordion Item #1.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="mb-0">
+                    Accordion Item #2
+                </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>This is the content for Accordion Item #2.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5 class="mb-0">
+                    Accordion Item #3
+                </h5>
+            </div>
+
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <p>This is the content for Accordion Item #3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

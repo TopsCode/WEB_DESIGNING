@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Popovers Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the popovers example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-popover {
+            margin-bottom: 10px;
+        }
+
+        .custom-popover .popover-header {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .custom-popover .popover-body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Popovers Example</h2>
+    <p>Click the buttons below to see popovers.</p>
+
+    <button type="button" class="btn btn-primary custom-popover" data-toggle="popover" title="Popover Title" data-content="This is the content of the popover.">Popover on top</button>
+
+    <button type="button" class="btn btn-primary custom-popover" data-toggle="popover" data-placement="right" title="Popover on right" data-content="This is the content of the popover.">Popover on right</button>
+
+    <button type="button" class="btn btn-primary custom-popover" data-toggle="popover" data-placement="bottom" title="Popover on bottom" data-content="This is the content of the popover.">Popover on bottom</button>
+
+    <button type="button" class="btn btn-primary custom-popover" data-toggle="popover" data-placement="left" title="Popover on left" data-content="This is the content of the popover.">Popover on left</button>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>

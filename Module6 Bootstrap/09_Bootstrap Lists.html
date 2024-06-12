@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Lists Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the lists example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list-item {
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .custom-list-item:hover {
+            background-color: #0056b3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Bootstrap Lists Example</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Unordered List</h5>
+            <ul class="custom-list">
+                <li class="custom-list-item">Item 1</li>
+                <li class="custom-list-item">Item 2</li>
+                <li class="custom-list-item">Item 3</li>
+                <li class="custom-list-item">Item 4</li>
+                <li class="custom-list-item">Item 5</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>Ordered List</h5>
+            <ol class="custom-list">
+                <li class="custom-list-item">Item 1</li>
+                <li class="custom-list-item">Item 2</li>
+                <li class="custom-list-item">Item 3</li>
+                <li class="custom-list-item">Item 4</li>
+                <li class="custom-list-item">Item 5</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <h5>Inline List</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item custom-list-item">Item 1</li>
+                <li class="list-inline-item custom-list-item">Item 2</li>
+                <li class="list-inline-item custom-list-item">Item 3</li>
+                <li class="list-inline-item custom-list-item">Item 4</li>
+                <li class="list-inline-item custom-list-item">Item 5</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

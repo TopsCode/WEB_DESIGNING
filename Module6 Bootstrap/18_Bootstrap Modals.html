@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modals Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the modal example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-button {
+            margin-bottom: 10px;
+        }
+
+        .custom-modal .modal-dialog {
+            max-width: 800px;
+        }
+
+        .custom-modal .modal-content {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .custom-modal .modal-header {
+            background-color: #007bff;
+            color: #fff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .custom-modal .modal-title {
+            font-weight: bold;
+        }
+
+        .custom-modal .modal-body {
+            padding: 20px;
+        }
+
+        .custom-modal .modal-footer {
+            justify-content: flex-start;
+            border-top: none;
+        }
+
+        .custom-modal .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+
+        .custom-modal .btn-secondary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+
+        .custom-modal .btn-primary {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .custom-modal .btn-primary:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Modals Example</h2>
+    <p>Click the buttons below to launch modals.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary custom-button" data-toggle="modal" data-target="#exampleModal">
+                Launch Modal 1
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button type="button" class="btn btn-primary custom-button" data-toggle="modal" data-target="#exampleModalLong">
+                Launch Modal 2
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade custom-modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is the content of Modal 1.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade custom-modal" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>This is the content of Modal 2.</p>
+                    <p>It can be long or short, and can contain any kind of content.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

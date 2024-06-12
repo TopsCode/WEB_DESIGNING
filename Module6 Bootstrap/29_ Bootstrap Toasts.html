@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Toasts Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the Toasts example */
+        .custom-container {
+            padding: 20px;
+        }
+
+        .custom-toast-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000; /* Adjust as needed */
+        }
+
+        /* Customize toast body */
+        .custom-toast-body {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Customize toast header */
+        .custom-toast-header {
+            background-color: #007bff;
+            color: #fff;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        /* Customize toast close button */
+        .custom-toast-close {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <h2>Bootstrap Toasts Example</h2>
+    <p>Click the buttons below to display toast notifications:</p>
+
+    <div class="custom-toast-container">
+        <!-- Toasts will be appended here -->
+    </div>
+
+    <button type="button" class="btn btn-primary" onclick="showToast('success')">Show Success Toast</button>
+    <button type="button" class="btn btn-danger" onclick="showToast('error')">Show Error Toast</button>
+    <button type="button" class="btn btn-warning" onclick="showToast('warning')">Show Warning Toast</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showToast(type) {
+        // Create a toast
+        var toast = `<div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+                        <div class="toast-header custom-toast-header">
+                            <strong class="mr-auto">Notification</strong>
+                            <button type="button" class="ml-2 mb-1 close custom-toast-close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body custom-toast-body">
+                            This is a ${type} message.
+                        </div>
+                    </div>`;
+
+        // Append the toast to the toast container
+        $('.custom-toast-container').append(toast);
+
+        // Initialize the toast
+        $('.toast').toast('show');
+
+        // Remove the toast from DOM after it is hidden
+        $('.toast').on('hidden.bs.toast', function () {
+            $(this).remove();
+        });
+    }
+</script>
+</body>
+</html>

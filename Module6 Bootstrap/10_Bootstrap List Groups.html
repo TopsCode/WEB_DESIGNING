@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap List Groups Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the list groups example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-list-group {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .custom-list-group-item {
+            padding: 10px;
+            border: 1px solid rgba(0,0,0,0.125);
+            border-top-width: 0;
+            color: #333;
+        }
+
+        .custom-list-group-item:first-child {
+            border-top-width: 1px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .custom-list-group-item:last-child {
+            border-bottom-width: 1px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .custom-list-group-item:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Bootstrap List Groups Example</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Default List Group</h5>
+            <div class="list-group custom-list-group">
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 1</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 2</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 3</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 4</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 5</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Active State List Group</h5>
+            <div class="list-group custom-list-group">
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 1</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item active">Item 2 (Active)</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 3</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 4</a>
+                <a href="#" class="list-group-item list-group-item-action custom-list-group-item">Item 5</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Buttons with Custom CSS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    /* Style the primary button */
+    .custom-btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #fff;
+    }
+    /* Style the secondary button */
+    .custom-btn-secondary {
+      background-color: #6c757d;
+      border-color: #6c757d;
+      color: #fff;
+    }
+    /* Style the success button */
+    .custom-btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+      color: #fff;
+    }
+    /* Style the danger button */
+    .custom-btn-danger {
+      background-color: #dc3545;
+      border-color: #dc3545;
+      color: #fff;
+    }
+    /* Change the button color on hover */
+    .btn-custom:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1>Bootstrap Buttons with Custom CSS</h1>
+    <!-- Primary Button -->
+    <button type="button" class="btn custom-btn-primary btn-custom mr-2">Primary Button</button>
+    <!-- Secondary Button -->
+    <button type="button" class="btn custom-btn-secondary btn-custom mr-2">Secondary Button</button>
+    <!-- Success Button -->
+    <button type="button" class="btn custom-btn-success btn-custom mr-2">Success Button</button>
+    <!-- Danger Button -->
+    <button type="button" class="btn custom-btn-danger btn-custom">Danger Button</button>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

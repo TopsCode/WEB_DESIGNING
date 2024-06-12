@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Responsive Utilities Example</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .custom-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5">
+    <h1>Bootstrap Responsive Utilities Example</h1>
+    
+    <!-- Visibility Classes -->
+    <div class="custom-box d-none d-sm-block mb-3">Visible on Small Screens and above</div>
+    <div class="custom-box d-block d-sm-none mb-3">Visible on Extra Small Screens</div>
+    
+    <!-- Display Classes -->
+    <div class="custom-box d-md-none mb-3">Visible on Medium Screens and below</div>
+    <div class="custom-box d-none d-md-block mb-3">Visible on Medium Screens and above</div>
+
+    <!-- Flex Direction -->
+    <div class="d-sm-flex flex-row-reverse mb-3">
+      <div class="p-2 custom-box">Flex item 1</div>
+      <div class="p-2 custom-box">Flex item 2</div>
+      <div class="p-2 custom-box">Flex item 3</div>
+    </div>
+
+    <!-- Order Classes -->
+    <div class="d-flex mb-3">
+      <div class="p-2 custom-box order-3">First</div>
+      <div class="p-2 custom-box order-2">Second</div>
+      <div class="p-2 custom-box order-1">Third</div>
+    </div>
+
+    <!-- Justify Content -->
+    <div class="d-flex justify-content-between mb-3">
+      <div class="p-2 custom-box">Flex item 1</div>
+      <div class="p-2 custom-box">Flex item 2</div>
+      <div class="p-2 custom-box">Flex item 3</div>
+    </div>
+
+    <!-- Align Items -->
+    <div class="d-flex align-items-start mb-3">
+      <div class="p-2 custom-box">Flex item 1</div>
+      <div class="p-2 custom-box">Flex item 2</div>
+      <div class="p-2 custom-box">Flex item 3</div>
+    </div>
+
+    <!-- Responsive Embed -->
+    <div class="embed-responsive embed-responsive-16by9 mb-3">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+
+    <!-- Image Responsive -->
+    <img src="https://via.placeholder.com/400" class="img-fluid" alt="Responsive Image">
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

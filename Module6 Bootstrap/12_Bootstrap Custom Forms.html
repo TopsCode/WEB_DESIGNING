@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Custom Forms Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the custom forms example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .custom-form-control {
+            margin-bottom: 10px;
+        }
+
+        .custom-form-check {
+            padding-left: 0;
+        }
+
+        .custom-form-check-input {
+            margin-right: 10px;
+        }
+
+        .custom-form-check-label {
+            font-weight: normal;
+        }
+
+        .custom-form-check-input:checked + .custom-form-check-label::before {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .custom-form-check-input:focus + .custom-form-check-label::before {
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+
+        .custom-form-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-form-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center mb-4">Bootstrap Custom Forms Example</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="custom-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control custom-form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control custom-form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control custom-form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="custom-form-check">
+                        <input type="checkbox" class="custom-form-check-input">
+                        <span class="custom-form-check-label">I agree to the terms and conditions</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn custom-form-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Utilities Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the utilities example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-text {
+            font-size: 1.5rem;
+            color: #343a40;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .custom-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .custom-list-item {
+            margin-bottom: 10px;
+        }
+
+        .custom-badge {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .custom-progress {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row">
+        <div class="col-md-12 custom-text">Bootstrap Utilities Example</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Typography</h5>
+            <p class="font-weight-bold">Bold text</p>
+            <p class="font-italic">Italic text</p>
+            <p class="text-uppercase">Uppercase text</p>
+            <p class="text-lowercase">Lowercase text</p>
+            <p class="text-capitalize">Capitalized text</p>
+        </div>
+        <div class="col-md-4">
+            <h5>Lists</h5>
+            <ul class="custom-list">
+                <li class="custom-list-item">List item 1</li>
+                <li class="custom-list-item">List item 2</li>
+                <li class="custom-list-item">List item 3</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Badges</h5>
+            <span class="badge badge-primary custom-badge">Primary</span>
+            <span class="badge badge-secondary custom-badge">Secondary</span>
+            <span class="badge badge-success custom-badge">Success</span>
+            <span class="badge badge-danger custom-badge">Danger</span>
+            <span class="badge badge-warning text-white custom-badge">Warning</span>
+            <span class="badge badge-info custom-badge">Info</span>
+            <span class="badge badge-light custom-badge">Light</span>
+            <span class="badge badge-dark custom-badge">Dark</span>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h5>Progress Bars</h5>
+            <div class="progress custom-progress">
+                <div class="progress-bar bg-primary" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+            </div>
+            <div class="progress custom-progress mt-2">
+                <div class="progress-bar bg-success" style="width: 50%;" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Buttons</h5>
+            <button type="button" class="btn btn-primary mr-2">Primary Button</button>
+            <button type="button" class="btn btn-secondary">Secondary Button</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

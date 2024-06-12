@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Helper Classes Example</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .custom-container {
+      margin-top: 50px;
+    }
+    .custom-box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    .custom-text {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container custom-container">
+    <h1 class="text-center">Bootstrap Helper Classes Example</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Spacing Classes -->
+        <div class="custom-box m-2">Margin on all sides</div>
+        <div class="custom-box mt-3">Margin-top</div>
+        <div class="custom-box mb-4">Margin-bottom</div>
+        <div class="custom-box ml-5">Margin-left</div>
+        <div class="custom-box mr-2">Margin-right</div>
+        <div class="custom-box p-3">Padding on all sides</div>
+        <div class="custom-box pt-4">Padding-top</div>
+        <div class="custom-box pb-5">Padding-bottom</div>
+        <div class="custom-box pl-2">Padding-left</div>
+        <div class="custom-box pr-3">Padding-right</div>
+      </div>
+      <div class="col-md-6">
+        <!-- Text Alignment Classes -->
+        <div class="custom-box text-left">Left-aligned text</div>
+        <div class="custom-box text-center">Center-aligned text</div>
+        <div class="custom-box text-right">Right-aligned text</div>
+        <div class="custom-box text-justify">Justified text</div>
+        <div class="custom-box text-nowrap">No wrap text</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Float and Clearfix Classes -->
+        <div class="custom-box float-left">Floated left</div>
+        <div class="custom-box float-right">Floated right</div>
+        <div class="clearfix"></div> <!-- Clearfix -->
+      </div>
+      <div class="col-md-6">
+        <!-- Display Classes -->
+        <div class="d-none">Hidden</div>
+        <div class="d-block">Block-level element</div>
+        <span class="d-inline">Inline-level element</span>
+        <div class="d-flex">Flex container</div>
+        <span class="d-inline-flex">Inline flex container</span>
+        <div class="invisible">Invisible</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Visibility Classes -->
+        <div class="visible-lg">Visible on large screens</div>
+        <div class="invisible-md">Invisible on medium screens</div>
+      </div>
+      <div class="col-md-6">
+        <!-- Overflow Classes -->
+        <div class="custom-box overflow-auto" style="height: 100px;">Overflow auto</div>
+        <div class="custom-box overflow-hidden" style="height: 100px; width: 100px;">Overflow hidden</div>
+        <div class="custom-box overflow-scroll" style="height: 100px;">Overflow scroll</div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Custom CSS -->
+        <div class="custom-box custom-text">Custom text color</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

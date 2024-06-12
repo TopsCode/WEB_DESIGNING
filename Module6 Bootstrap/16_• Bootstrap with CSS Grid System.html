@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid System Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the grid system example */
+        .custom-container {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        .custom-row {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .custom-col {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        @media (min-width: 576px) {
+            .custom-col-sm {
+                background-color: #dc3545;
+                color: #fff;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .custom-col-md {
+                background-color: #ffc107;
+                color: #212529;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .custom-col-lg {
+                background-color: #17a2b8;
+                color: #fff;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .custom-col-xl {
+                background-color: #6c757d;
+                color: #fff;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container custom-container">
+    <div class="row custom-row">
+        <div class="col">12 columns</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-6">6 columns</div>
+        <div class="col-6">6 columns</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-8">8 columns</div>
+        <div class="col-4">4 columns</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-4">4 columns</div>
+        <div class="col-4">4 columns</div>
+        <div class="col-4">4 columns</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-lg-6">6 columns on large screens</div>
+        <div class="col-lg-6">6 columns on large screens</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-md-4">4 columns on medium screens</div>
+        <div class="col-md-4">4 columns on medium screens</div>
+        <div class="col-md-4">4 columns on medium screens</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-sm-3">3 columns on small screens</div>
+        <div class="col-sm-3">3 columns on small screens</div>
+        <div class="col-sm-3">3 columns on small screens</div>
+        <div class="col-sm-3">3 columns on small screens</div>
+    </div>
+
+    <div class="row custom-row">
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+        <div class="col-xl-2">2 columns on extra-large screens</div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
