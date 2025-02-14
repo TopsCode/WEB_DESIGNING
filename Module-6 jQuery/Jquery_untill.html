@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery parentsUntil() Method</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .container {
+            width: 500px;
+            margin: 20px;
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid #4CAF50;
+        }
+        .parent {
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgreen;
+            border: 2px solid #4CAF50;
+        }
+        .child {
+            margin: 10px;
+            padding: 10px;
+            background-color: lightcoral;
+            border: 2px solid #4CAF50;
+        }
+        #info {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="parent">
+            <div class="child" id="target">
+                Click the button to see the parents of this element.
+            </div>
+        </div>
+    </div>
+
+    <button id="getParentsUntil">Get Parents Until</button>
+    <div id="info"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            // When the "Get Parents Until" button is clicked
+            $("#getParentsUntil").click(function() {
+                // Use parentsUntil to get all ancestors until the .container element
+                var ancestorsUntilContainer = $("#target").parentsUntil(".container").map(function() {
+                    return this.outerHTML;
+                }).get().join("<br>");
+
+                // Display the result
+                var info = `
+                    <p><strong>Ancestors until .container:</strong><br>${ancestorsUntilContainer}</p>
+                `;
+                $("#info").html(info);
+            });
+            
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selectors Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        #special {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="main-title">Welcome to jQuery Selectors</h1>
+
+    <p class="description">This is a paragraph with a class of 'description'.</p>
+    <p class="description">This is another paragraph with the same class.</p>
+
+    <p id="special">This is a special paragraph with an ID of 'special'.</p>
+    
+    <div class="content">
+        <h2>This is a div with a class of 'content'.</h2>
+    </div>
+
+    <button id="change-style">Change Style</button>
+
+    <script>
+        $(document).ready(function() {
+            // Example of an ID Selector
+            $("#main-title").css("color", "blue");
+
+            // Example of a Class Selector
+            $(".description").css("font-weight", "bold");
+
+            // Example of a Descendant Selector
+            $(".content h2").css("font-size", "20px");
+
+            // Example of an Attribute Selector
+            $("a[href]").css("text-decoration", "underline");
+
+            // Example of a :first-child Selector
+            $("p:first-child").addClass("highlight");
+
+            // Change style on button click
+            $("#change-style").click(function() {
+                // Example of :hover Selector
+                $(".description").hover(
+                    function() {
+                        $(this).css("color", "green");
+                    },
+                    function() {
+                        $(this).css("color", "black");
+                    }
+                );
+            });
+        });
+    </script>
+
+</body>
+</html>

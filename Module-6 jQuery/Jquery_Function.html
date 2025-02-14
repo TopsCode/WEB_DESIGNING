@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            display: inline-block;
+        }
+        #content {
+            display: none;
+            padding: 20px;
+            background-color: lightgreen;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>jQuery Functions Demo</h1>
+
+    <!-- Button to trigger actions -->
+    <button id="showHideBtn">Toggle Content</button>
+    <button id="animateBtn">Animate Box</button>
+    <button id="changeColorBtn">Change Color</button>
+
+    <!-- Box to animate -->
+    <div id="box"></div>
+
+    <!-- Hidden content -->
+    <div id="content">
+        <p>This is some hidden content!</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+
+            // 1. hide() and show() functions
+            $("#showHideBtn").click(function() {
+                $("#content").toggle();  // Toggles the visibility of the content
+            });
+
+            // 2. animate() function
+            $("#animateBtn").click(function() {
+                $("#box").animate({
+                    left: "200px",       // Moves the box to the right
+                    height: "150px",     // Changes the height
+                    width: "150px"       // Changes the width
+                }, 1000, function() {
+                    // Callback after the animation completes
+                    alert("Animation Complete!");
+                });
+            });
+
+            // 3. css() function
+            $("#changeColorBtn").click(function() {
+                $("#box").css("background-color", "orange");  // Changes the color of the box
+            });
+
+            // 4. addClass() and removeClass() functions
+            $("#box").hover(function() {
+                $(this).addClass("highlight");  // Adds a class on hover
+            }, function() {
+                $(this).removeClass("highlight");  // Removes the class when hover ends
+            });
+
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Dimension Methods Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            margin: 30px;
+            border: 5px solid #4CAF50;
+            background-color: lightblue;
+            position: relative;
+        }
+
+        #info {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>jQuery Dimension Methods Demo</h1>
+
+    <div class="box" id="box">
+        <p>This is a box. Resize or interact with it to see the dimension methods in action.</p>
+    </div>
+
+    <button id="getDimensions">Get Dimensions</button>
+    <button id="setDimensions">Set New Dimensions</button>
+
+    <div id="info"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            // 1. Get the width and height using .width() and .height()
+            $("#getDimensions").click(function() {
+                var boxWidth = $("#box").width();
+                var boxHeight = $("#box").height();
+                var innerBoxWidth = $("#box").innerWidth();
+                var innerBoxHeight = $("#box").innerHeight();
+                var outerBoxWidth = $("#box").outerWidth();
+                var outerBoxHeight = $("#box").outerHeight();
+                var boxOffset = $("#box").offset();
+
+                // Display the dimensions and position of the box
+                var info = `
+                    <p><strong>Width:</strong> ${boxWidth}px</p>
+                    <p><strong>Height:</strong> ${boxHeight}px</p>
+                    <p><strong>Inner Width (includes padding):</strong> ${innerBoxWidth}px</p>
+                    <p><strong>Inner Height (includes padding):</strong> ${innerBoxHeight}px</p>
+                    <p><strong>Outer Width (includes margin):</strong> ${outerBoxWidth}px</p>
+                    <p><strong>Outer Height (includes margin):</strong> ${outerBoxHeight}px</p>
+                    <p><strong>Offset (position from top-left of document):</strong> (${boxOffset.left}px, ${boxOffset.top}px)</p>
+                `;
+                $("#info").html(info);
+            });
+
+            // 2. Set new dimensions using .width(), .height(), .innerWidth(), .innerHeight()
+            $("#setDimensions").click(function() {
+                // Set new dimensions for the box
+                $("#box").width(400);        // Set width
+                $("#box").height(300);       // Set height
+                $("#box").innerWidth(350);   // Set inner width (including padding)
+                $("#box").innerHeight(250);  // Set inner height (including padding)
+
+                // Change the content inside the box to reflect the new dimensions
+                $("#box p").text("The box has been resized. Click 'Get Dimensions' to see the new values.");
+            });
+
+        });
+    </script>
+
+</body>
+</html>

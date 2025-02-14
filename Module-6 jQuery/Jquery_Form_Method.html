@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Form Methods Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>jQuery Form Methods Demo</h1>
+
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="button" id="clearForm">Clear Form</button>
+    </form>
+
+    <div id="formOutput"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            // 1. Get form values with .val() and .serialize()
+            $("#userForm").submit(function(event) {
+                event.preventDefault();  // Prevent the form from submitting normally
+
+                // Get individual values from the form fields
+                var name = $("#name").val();
+                var email = $("#email").val();
+                var message = $("#message").val();
+                var subscribe = $("#subscribe").prop("checked");
+
+                // Show form values
+                var output = `
+                    <h3>Form Data Submitted:</h3>
+                    <p>Name: ${name}</p>
+                    <p>Email: ${email}</p>
+                    <p>Message: ${message}</p>
+                    <p>Subscribed: ${subscribe ? "Yes" : "No"}</p>
+                `;
+                $("#formOutput").html(output);
+            });
+
+            // 2. Set form values using .val()
+            $("#name").val("John Doe");
+            $("#email").val("johndoe@example.com");
+
+            // 3. Clear form using .reset() or .val('')
+            $("#clearForm").click(function() {
+                $("#userForm")[0].reset();  // This will reset the form
+                $("#formOutput").html("");  // Clear the output display
+            });
+
+            // 4. Disable and enable form fields using .prop()
+            // Disable the email field
+            $("#email").prop("disabled", true);
+
+            // Enable the email field after 3 seconds
+            setTimeout(function() {
+                $("#email").prop("disabled", false);
+            }, 3000);
+
+            // 5. Check if checkbox is checked using .prop()
+            $("#subscribe").change(function() {
+                if ($(this).prop("checked")) {
+                    $(this).parent().addClass("highlight");
+                } else {
+                    $(this).parent().removeClass("highlight");
+                }
+            });
+
+            // 6. Serialize form data using .serialize()
+            var serializedData = $("#userForm").serialize(); // Get all form values as a string
+            console.log(serializedData);
+        });
+    </script>
+
+</body>
+</html>
