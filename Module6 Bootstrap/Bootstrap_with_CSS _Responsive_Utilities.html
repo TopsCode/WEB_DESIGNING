@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Utilities</title>
+    <!-- Bootstrap 4 CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-box {
+            padding: 20px;
+            margin: 10px;
+            background-color: lightblue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h2 class="text-center">Bootstrap Responsive Utilities</h2>
+
+        <!-- Element visible on all screen sizes -->
+        <div class="custom-box d-block">
+            <p>This element is visible on all screen sizes</p>
+        </div>
+
+        <!-- Element visible only on small screens and up -->
+        <div class="custom-box d-sm-block d-none">
+            <p>This element is visible on small screens and up (sm, md, lg, xl)</p>
+        </div>
+
+        <!-- Element hidden on medium and larger screens -->
+        <div class="custom-box d-md-none">
+            <p>This element is visible only on small screens (hidden on md, lg, xl screens)</p>
+        </div>
+
+        <!-- Element visible on large screens and up -->
+        <div class="custom-box d-none d-lg-block">
+            <p>This element is visible only on large screens and up (lg, xl)</p>
+        </div>
+
+        <!-- Flexbox alignment example -->
+        <div class="custom-box d-flex justify-content-center align-items-center">
+            <p>This is a flexbox container, centered content</p>
+        </div>
+
+        <!-- Grid layout example -->
+        <div class="custom-box d-grid gap-3">
+            <div class="p-2" style="background-color: lightgreen;">Grid Item 1</div>
+            <div class="p-2" style="background-color: lightcoral;">Grid Item 2</div>
+            <div class="p-2" style="background-color: lightyellow;">Grid Item 3</div>
+        </div>
+
+        <!-- Element hidden on extra large screens -->
+        <div class="custom-box d-xl-none">
+            <p>This element is hidden on extra large screens (xl)</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4 JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
