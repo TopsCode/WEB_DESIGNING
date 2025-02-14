@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Max-Height Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-3xl font-semibold mb-6">Tailwind CSS Max-Height Example</h1>
+
+    <!-- Max-Height 0 -->
+    <div class="max-h-0 bg-blue-500 text-white p-4 mb-4 overflow-hidden">
+        Max-Height 0 (Content will be hidden)
+    </div>
+
+    <!-- Max-Height Full (100%) -->
+    <div class="max-h-full bg-green-500 text-white p-4 mb-4 overflow-auto">
+        Max-Height Full (100% of Parent Height)
+    </div>
+
+    <!-- Max-Height Screen (100vh) -->
+    <div class="max-h-screen bg-yellow-500 text-white p-4 mb-4 overflow-auto">
+        Max-Height Screen (100% of Viewport Height)
+    </div>
+
+    <!-- Max-Height Arbitrary Value (200px) -->
+    <div class="max-h-[200px] bg-red-500 text-white p-4 mb-4 overflow-auto">
+        Max-Height 200px (Overflow will be scrollable)
+    </div>
+
+    <!-- Max-Height 50% -->
+    <div class="max-h-[50%] bg-purple-500 text-white p-4 mb-4 overflow-auto">
+        Max-Height 50% of Parent Height
+    </div>
+
+</body>
+</html>

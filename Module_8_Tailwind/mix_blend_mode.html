@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix-blend-mode Example in Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">mix-blend-mode Examples</h1>
+
+        <!-- Image with mix-blend-multiply -->
+        <div class="relative">
+            <img src="https://via.placeholder.com/600x400" alt="Background Image" class="w-full h-auto mix-blend-multiply">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+                <h2 class="text-white text-3xl">Multiply Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Image with mix-blend-screen -->
+        <div class="relative mt-8">
+            <img src="https://via.placeholder.com/600x400" alt="Background Image" class="w-full h-auto mix-blend-screen">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+                <h2 class="text-white text-3xl">Screen Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Image with mix-blend-overlay -->
+        <div class="relative mt-8">
+            <img src="https://via.placeholder.com/600x400" alt="Background Image" class="w-full h-auto mix-blend-overlay">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+                <h2 class="text-white text-3xl">Overlay Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Image with mix-blend-darken -->
+        <div class="relative mt-8">
+            <img src="https://via.placeholder.com/600x400" alt="Background Image" class="w-full h-auto mix-blend-darken">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+                <h2 class="text-white text-3xl">Darken Blend Mode</h2>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

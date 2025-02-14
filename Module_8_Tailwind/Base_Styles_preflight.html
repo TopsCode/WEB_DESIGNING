@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Preflight Example</title>
+    <!-- Tailwind CSS CDN link (for the example) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Custom styles can be added here if needed */
+        /* You can also add custom base styles overriding Tailwind's preflight here */
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl font-bold">Tailwind Preflight Example</h1>
+        <p class="mt-2 text-lg">This is a simple page using Tailwind CSS with Preflight enabled.</p>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="bg-white p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Introduction</h2>
+            <p class="mb-4">Tailwind's preflight base styles help normalize CSS across different browsers and provide a consistent starting point for your designs.</p>
+
+            <h3 class="text-xl font-medium mt-4">How Preflight Helps</h3>
+            <p class="mb-4">Preflight applies a set of default styles to your HTML elements, like setting `box-sizing` to `border-box` for all elements, removing list bullets, resetting link styles, and other common browser resets.</p>
+
+            <ul class="list-inside list-disc pl-6">
+                <li>Consistency in typography</li>
+                <li>Consistent box model</li>
+                <li>Resets for form elements</li>
+                <li>Accessible buttons</li>
+            </ul>
+        </section>
+
+        <section class="bg-white p-4 rounded-lg shadow-lg mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Buttons Example</h2>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Click Me</button>
+            <button class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 ml-4">Another Button</button>
+        </section>
+
+        <section class="bg-white p-4 rounded-lg shadow-lg mt-6">
+            <h2 class="text-2xl font-semibold mb-4">Forms Example</h2>
+            <form action="#">
+                <label for="name" class="block text-lg">Name:</label>
+                <input type="text" id="name" class="mt-2 px-4 py-2 border rounded w-full" placeholder="Enter your name">
+
+                <label for="email" class="block text-lg mt-4">Email:</label>
+                <input type="email" id="email" class="mt-2 px-4 py-2 border rounded w-full" placeholder="Enter your email">
+
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300 mt-4">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 mt-6">
+        <p class="text-center">Tailwind CSS Preflight Example - 2025</p>
+    </footer>
+
+</body>
+</html>

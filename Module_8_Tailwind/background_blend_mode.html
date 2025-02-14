@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-blend-mode Example in Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">background-blend-mode Examples</h1>
+
+        <!-- Background Image with bg-blend-multiply -->
+        <div class="relative bg-gray-800 bg-blend-multiply" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover; height: 300px;">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+                <h2 class="text-3xl">Multiply Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Background Image with bg-blend-screen -->
+        <div class="relative mt-8 bg-gray-800 bg-blend-screen" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover; height: 300px;">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+                <h2 class="text-3xl">Screen Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Background Image with bg-blend-overlay -->
+        <div class="relative mt-8 bg-gray-800 bg-blend-overlay" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover; height: 300px;">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+                <h2 class="text-3xl">Overlay Blend Mode</h2>
+            </div>
+        </div>
+
+        <!-- Background Image with bg-blend-darken -->
+        <div class="relative mt-8 bg-gray-800 bg-blend-darken" style="background-image: url('https://via.placeholder.com/600x400'); background-size: cover; height: 300px;">
+            <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white">
+                <h2 class="text-3xl">Darken Blend Mode</h2>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

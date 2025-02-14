@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Background Position Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Adding background image for demonstration */
+        .bg-example {
+            background-image: url('https://via.placeholder.com/500');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">Background Position Examples</h1>
+
+        <!-- bg-top -->
+        <div class="bg-example bg-top h-80 text-white flex justify-center items-center">
+            <p class="text-xl">Background Position: Top</p>
+        </div>
+
+        <!-- bg-center -->
+        <div class="bg-example bg-center h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Position: Center</p>
+        </div>
+
+        <!-- bg-bottom -->
+        <div class="bg-example bg-bottom h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Position: Bottom</p>
+        </div>
+
+        <!-- bg-left -->
+        <div class="bg-example bg-left h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Position: Left</p>
+        </div>
+
+        <!-- bg-right -->
+        <div class="bg-example bg-right h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Position: Right</p>
+        </div>
+
+        <!-- Custom position (10px 20px) -->
+        <div class="bg-example bg-[10px_20px] h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Position: 10px 20px</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

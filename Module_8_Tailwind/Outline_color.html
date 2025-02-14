@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Outline Color Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">Outline Color Example</h1>
+
+        <!-- Outline with color on focus -->
+        <div class="flex justify-center">
+            <button class="p-4 border-2 border-blue-500 focus:outline-4 focus:outline-blue-500">
+                Focus with Blue Outline
+            </button>
+        </div>
+
+        <!-- Outline with red color on focus -->
+        <div class="flex justify-center mt-8">
+            <button class="p-4 border-2 border-gray-300 outline-none focus:outline-4 focus:outline-red-500">
+                Focus with Red Outline
+            </button>
+        </div>
+
+        <!-- Outline with custom color (green) -->
+        <div class="flex justify-center mt-8">
+            <button class="p-4 border-2 border-green-500 outline-none focus:outline-4 focus:outline-green-500">
+                Focus with Green Outline
+            </button>
+        </div>
+
+        <!-- Outline none (remove outline) -->
+        <div class="flex justify-center mt-8">
+            <button class="p-4 border-2 border-black outline-none focus:outline-none">
+                Focus without Outline
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

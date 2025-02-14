@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-items Example in Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">place-items Examples</h1>
+
+        <!-- Grid Container with place-items-start -->
+        <div class="grid grid-cols-3 gap-4 place-items-start bg-gray-200 p-4">
+            <div class="w-20 h-20 bg-blue-500"></div>
+            <div class="w-20 h-20 bg-green-500"></div>
+            <div class="w-20 h-20 bg-red-500"></div>
+        </div>
+
+        <!-- Grid Container with place-items-center -->
+        <div class="grid grid-cols-3 gap-4 place-items-center bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500"></div>
+            <div class="w-20 h-20 bg-green-500"></div>
+            <div class="w-20 h-20 bg-red-500"></div>
+        </div>
+
+        <!-- Grid Container with place-items-end -->
+        <div class="grid grid-cols-3 gap-4 place-items-end bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500"></div>
+            <div class="w-20 h-20 bg-green-500"></div>
+            <div class="w-20 h-20 bg-red-500"></div>
+        </div>
+
+        <!-- Grid Container with place-items-baseline -->
+        <div class="grid grid-cols-3 gap-4 place-items-baseline bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500">Text</div>
+            <div class="w-20 h-20 bg-green-500">Text</div>
+            <div class="w-20 h-20 bg-red-500">Text</div>
+        </div>
+
+        <!-- Grid Container with place-items-stretch (default behavior) -->
+        <div class="grid grid-cols-3 gap-4 place-items-stretch bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500"></div>
+            <div class="w-20 h-20 bg-green-500"></div>
+            <div class="w-20 h-20 bg-red-500"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS caption-side Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-3xl font-semibold mb-6">Tailwind CSS Caption Side</h1>
+
+    <!-- Table with caption at the top (default behavior) -->
+    <table class="min-w-full border border-gray-300">
+        <caption class="text-xl font-semibold mb-4">Employee Information</caption>
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="px-4 py-2 text-left">Name</th>
+                <th class="px-4 py-2 text-left">Position</th>
+                <th class="px-4 py-2 text-left">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white">
+                <td class="px-4 py-2">John Doe</td>
+                <td class="px-4 py-2">Manager</td>
+                <td class="px-4 py-2">New York</td>
+            </tr>
+            <tr class="bg-gray-100">
+                <td class="px-4 py-2">Jane Smith</td>
+                <td class="px-4 py-2">Developer</td>
+                <td class="px-4 py-2">San Francisco</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Table with caption at the bottom -->
+    <table class="min-w-full border border-gray-300 mt-8">
+        <caption class="caption-bottom text-xl font-semibold mt-4">Product Information</caption>
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="px-4 py-2 text-left">Product</th>
+                <th class="px-4 py-2 text-left">Price</th>
+                <th class="px-4 py-2 text-left">Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white">
+                <td class="px-4 py-2">Laptop</td>
+                <td class="px-4 py-2">$999</td>
+                <td class="px-4 py-2">In Stock</td>
+            </tr>
+            <tr class="bg-gray-100">
+                <td class="px-4 py-2">Smartphone</td>
+                <td class="px-4 py-2">$699</td>
+                <td class="px-4 py-2">Out of Stock</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

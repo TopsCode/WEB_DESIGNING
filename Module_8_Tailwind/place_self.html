@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-self Example in Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">place-self Examples</h1>
+
+        <!-- Grid Container with place-self-start for individual items -->
+        <div class="grid grid-cols-3 gap-4 bg-gray-200 p-4">
+            <div class="w-20 h-20 bg-blue-500 place-self-start"></div>
+            <div class="w-20 h-20 bg-green-500 place-self-center"></div>
+            <div class="w-20 h-20 bg-red-500 place-self-end"></div>
+        </div>
+
+        <!-- Grid Container with place-self-center for individual items -->
+        <div class="grid grid-cols-3 gap-4 bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500 place-self-center"></div>
+            <div class="w-20 h-20 bg-green-500 place-self-center"></div>
+            <div class="w-20 h-20 bg-red-500 place-self-center"></div>
+        </div>
+
+        <!-- Grid Container with place-self-stretch for individual items -->
+        <div class="grid grid-cols-3 gap-4 bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500 place-self-stretch"></div>
+            <div class="w-20 h-20 bg-green-500 place-self-stretch"></div>
+            <div class="w-20 h-20 bg-red-500 place-self-stretch"></div>
+        </div>
+
+        <!-- Grid Container with place-self-baseline for individual items -->
+        <div class="grid grid-cols-3 gap-4 bg-gray-200 p-4 mt-8">
+            <div class="w-20 h-20 bg-blue-500 place-self-baseline">Text</div>
+            <div class="w-20 h-20 bg-green-500 place-self-baseline">Text</div>
+            <div class="w-20 h-20 bg-red-500 place-self-baseline">Text</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

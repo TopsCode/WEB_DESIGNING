@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Background Size Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Adding background image for demonstration */
+        .bg-example {
+            background-image: url('https://via.placeholder.com/500');
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="container mx-auto p-6 bg-white shadow-lg space-y-6">
+        <h1 class="text-2xl font-bold mb-4">Background Size Examples</h1>
+
+        <!-- bg-auto -->
+        <div class="bg-example bg-auto h-80 text-white flex justify-center items-center">
+            <p class="text-xl">Background Size: Auto</p>
+        </div>
+
+        <!-- bg-cover -->
+        <div class="bg-example bg-cover h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Size: Cover</p>
+        </div>
+
+        <!-- bg-contain -->
+        <div class="bg-example bg-contain h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Size: Contain</p>
+        </div>
+
+        <!-- Custom background size (100px 200px) -->
+        <div class="bg-example bg-[100px_200px] h-80 text-white flex justify-center items-center mt-8">
+            <p class="text-xl">Background Size: 100px 200px</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

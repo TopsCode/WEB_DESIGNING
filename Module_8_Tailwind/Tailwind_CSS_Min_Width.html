@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Min-Width Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <h1 class="text-3xl font-semibold mb-6">Tailwind CSS Min-Width Example</h1>
+
+    <!-- Min-Width 0 -->
+    <div class="min-w-0 bg-blue-500 text-white p-4 mb-4">
+        Min-Width 0 (Can Shrink)
+    </div>
+
+    <!-- Min-Width Full (100%) -->
+    <div class="min-w-full bg-green-500 text-white p-4 mb-4">
+        Min-Width Full (100% of Parent Width)
+    </div>
+
+    <!-- Min-Width Arbitrary Value (200px) -->
+    <div class="min-w-[200px] bg-yellow-500 text-white p-4 mb-4">
+        Min-Width 200px
+    </div>
+
+    <!-- Min-Width Responsive (Screen Sizes) -->
+    <div class="min-w-screen-sm sm:min-w-screen-md lg:min-w-screen-lg bg-purple-500 text-white p-4 mb-4">
+        Min-Width based on Screen Size
+    </div>
+
+</body>
+</html>
