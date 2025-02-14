@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Creating an Object Using Object Literal
+let personLiteral = {
+    name: "John Doe",
+    age: 30,
+    profession: "Software Developer",
+    greet: function() {
+        return "Hello, my name is " + this.name;
+    }
+};
+
+// Accessing object properties
+console.log("Object Literal - Name:", personLiteral.name);  // Output: John Doe
+console.log("Object Literal - Profession:", personLiteral.profession);  // Output: Software Developer
+console.log(personLiteral.greet());  // Output: Hello, my name is John Doe
+
+// 2. Creating an Object Using new Object()
+let personNewObject = new Object();
+personNewObject.name = "Jane Smith";
+personNewObject.age = 28;
+personNewObject.profession = "Doctor";
+personNewObject.greet = function() {
+    return "Hi, I'm " + this.name;
+};
+
+// Accessing object properties
+console.log("new Object() - Name:", personNewObject.name);  // Output: Jane Smith
+console.log("new Object() - Profession:", personNewObject.profession);  // Output: Doctor
+console.log(personNewObject.greet());  // Output: Hi, I'm Jane Smith
+
+// 3. Creating an Object Using an Object Constructor
+function Person(name, age, profession) {
+    this.name = name;
+    this.age = age;
+    this.profession = profession;
+    this.greet = function() {
+        return "Hello, I'm " + this.name + " and I work as a " + this.profession;
+    };
+}
+
+// Creating instances of Person
+let person1 = new Person("Alice", 25, "Engineer");
+let person2 = new Person("Bob", 32, "Teacher");
+
+// Accessing properties and methods
+console.log(person1.greet());  // Output: Hello, I'm Alice and I work as a Engineer
+console.log(person2.greet());  // Output: Hello, I'm Bob and I work as a Teacher
+
+// 4. Modifying an Object Property
+person1.age = 26;
+console.log("Updated age of person1:", person1.age);  // Output: 26
+
+// 5. Deleting an Object Property
+delete person2.profession;
+console.log("After deletion of profession:", person2);  // Output: { name: 'Bob', age: 32 }
+
+    </script>
+</body>
+</html>

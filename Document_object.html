@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1. document.getElementById() - Returns the element with the specified ID
+let elementById = document.getElementById("myElement");
+console.log("Element by ID:", elementById);
+
+// 2. document.getElementsByClassName() - Returns a collection of elements with the specified class name
+let elementsByClass = document.getElementsByClassName("myClass");
+console.log("Elements by Class Name:", elementsByClass);
+
+// 3. document.getElementsByTagName() - Returns a collection of elements with the specified tag name
+let elementsByTag = document.getElementsByTagName("p");
+console.log("Elements by Tag Name:", elementsByTag);
+
+// 4. document.querySelector() - Returns the first element that matches the specified CSS selector
+let elementBySelector = document.querySelector(".myClass");
+console.log("Element by Selector:", elementBySelector);
+
+// 5. document.querySelectorAll() - Returns a NodeList of all elements that match the specified CSS selector
+let elementsBySelectorAll = document.querySelectorAll("div.myClass");
+console.log("Elements by querySelectorAll:", elementsBySelectorAll);
+
+// 6. document.createElement() - Creates a new HTML element
+let newElement = document.createElement("div");
+newElement.textContent = "This is a new div element!";
+document.body.appendChild(newElement); // Appending the new element to the body
+
+// 7. document.createTextNode() - Creates a new text node
+let newText = document.createTextNode("This is some text.");
+let textNodeParent = document.getElementById("textNodeContainer");
+textNodeParent.appendChild(newText); // Appending the text node to an existing element
+
+// 8. document.getElementById().innerHTML - Sets or gets the HTML content of an element
+let content = document.getElementById("contentElement").innerHTML;
+console.log("Current Content of Element:", content);
+
+// 9. document.getElementById().innerText - Sets or gets the text content of an element (without HTML tags)
+let textContent = document.getElementById("textElement").innerText;
+console.log("Current Text Content of Element:", textContent);
+
+// 10. document.write() - Writes a string of text to the document (use with caution)
+document.write("<h2>This is a new heading added to the document</h2>");
+
+// 11. document.getElementById().style - Allows you to set or get the style of an element
+let element = document.getElementById("styledElement");
+element.style.color = "blue"; // Changing the text color to blue
+
+// 12. document.removeChild() - Removes a child node from an element
+let parentElement = document.getElementById("parentElement");
+let childElement = document.getElementById("childElement");
+parentElement.removeChild(childElement); // Removes the specified child from the parent
+
+  </script>  
+</body>
+</html>

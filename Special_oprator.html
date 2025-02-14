@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Ternary Operator (?:) - Shorthand for if-else
+let age = 18;
+let canVote = (age >= 18) ? "Yes" : "No";
+console.log("Ternary Operator - Can vote:", canVote); // Output: Yes
+
+// 2. typeof Operator - Returns the data type of a variable
+let x = 42;
+console.log("typeof x:", typeof x); // Output: number
+let y = "Hello";
+console.log("typeof y:", typeof y); // Output: string
+
+// 3. instanceof Operator - Checks if an object belongs to a class
+class Animal {}
+let dog = new Animal();
+console.log("instanceof Operator - dog is Animal:", dog instanceof Animal); // Output: true
+
+// 4. delete Operator - Deletes an object property
+let person = { name: "John", age: 30 };
+delete person.age;
+console.log("delete Operator - person object:", person); // Output: { name: "John" }
+
+// 5. void Operator - Returns undefined
+console.log("void Operator:", void(0)); // Output: undefined
+
+// 6. Comma Operator (,) - Executes multiple expressions and returns the last one
+let a = (1, 2, 3, 4);
+console.log("Comma Operator - a:", a); // Output: 4
+
+// 7. new Operator - Creates an instance of an object
+let date = new Date();
+console.log("new Operator - Current Date:", date); // Output: Current Date and Time
+
+// 8. in Operator - Checks if a property exists in an object
+let car = { brand: "Toyota", model: "Corolla" };
+console.log("in Operator - 'brand' in car:", "brand" in car); // Output: true
+console.log("in Operator - 'price' in car:", "price" in car); // Output: false
+
+    </script>
+</body>
+</html>

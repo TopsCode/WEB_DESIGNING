@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // 1. alert() - Displays an alert box with a message
+window.alert("Hello, this is an alert!");
+
+// 2. confirm() - Displays a dialog with OK/Cancel buttons
+let result = window.confirm("Are you sure?");
+console.log("User confirmed:", result);  // Output: true or false
+
+// 3. prompt() - Displays a prompt box for user input
+let name = window.prompt("Enter your name:");
+console.log("User's name:", name);
+
+// 4. setTimeout() - Sets a timer to execute a function after a specified time
+window.setTimeout(function() {
+    alert("This message appears after 2 seconds");
+}, 2000);
+
+// 5. setInterval() - Executes a function repeatedly at a specified interval
+let counter = 0;
+let intervalId = window.setInterval(function() {
+    counter++;
+    console.log("Counter:", counter);
+    if (counter === 5) {
+        window.clearInterval(intervalId); // Stop interval after 5 repetitions
+    }
+}, 1000);
+
+// 6. clearTimeout() - Cancels a timeout set by setTimeout()
+let timeoutId = window.setTimeout(function() {
+    alert("This message will not be shown");
+}, 3000);
+window.clearTimeout(timeoutId); // Cancels the timeout before it executes
+
+// 7. clearInterval() - Cancels an interval set by setInterval()
+let intervalId2 = window.setInterval(function() {
+    console.log("This will be stopped after 3 seconds");
+}, 1000);
+window.setTimeout(function() {
+    window.clearInterval(intervalId2); // Stops the interval after 3 seconds
+}, 3000);
+
+// 8. open() - Opens a new browser window or tab
+let newWindow = window.open("https://www.example.com", "_blank");
+newWindow.focus(); // Focus on the newly opened window
+
+// 9. close() - Closes a window opened by window.open()
+let newWindow2 = window.open("https://www.example.com", "_blank");
+// Close the window after 3 seconds
+window.setTimeout(function() {
+    newWindow2.close();
+}, 3000);
+
+// 10. resizeTo() - Resize the window to a specific width and height
+window.resizeTo(800, 600); // Resize the window to 800x600 pixels
+
+// 11. scrollTo() - Scrolls the window to a specific position
+window.scrollTo(0, 500); // Scrolls the window down by 500px
+
+// 12. scrollBy() - Scrolls the window by a certain number of pixels relative to its current position
+window.scrollBy(0, 100); // Scrolls the window down by 100px
+
+   </script> 
+</body>
+</html>

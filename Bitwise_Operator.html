@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    // Declare variables
+let a = 5;  // Binary:  0101
+let b = 3;  // Binary:  0011
+
+// Bitwise AND (&) - Performs AND operation on each bit
+console.log("Bitwise AND:", a & b); // Output: 1 (Binary: 0001)
+
+// Bitwise OR (|) - Performs OR operation on each bit
+console.log("Bitwise OR:", a | b); // Output: 7 (Binary: 0111)
+
+// Bitwise XOR (^) - Performs XOR operation on each bit
+console.log("Bitwise XOR:", a ^ b); // Output: 6 (Binary: 0110)
+
+// Bitwise NOT (~) - Inverts bits (2's complement)
+console.log("Bitwise NOT (~a):", ~a); // Output: -6 (Binary: 1010 in 2's complement)
+
+// Left Shift (<<) - Shifts bits to the left
+console.log("Left Shift (a << 1):", a << 1); // Output: 10 (Binary: 1010)
+
+// Right Shift (>>) - Shifts bits to the right (sign-preserving)
+console.log("Right Shift (a >> 1):", a >> 1); // Output: 2 (Binary: 0010)
+
+// Unsigned Right Shift (>>>) - Shifts bits to the right, fills with zeros
+console.log("Unsigned Right Shift (-5 >>> 1):", -5 >>> 1); 
+// Output: 2147483645 (Binary: 01111111111111111111111111111110)
+
+   </script> 
+</body>
+</html>
