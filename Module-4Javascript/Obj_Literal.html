@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating an object using object literal
+let person = {
+    name: "John Doe",
+    age: 30,
+    profession: "Software Developer",
+    isMarried: false,
+
+    // Method inside an object
+    greet: function() {
+        return "Hello, my name is " + this.name;
+    }
+};
+
+// Accessing object properties
+console.log("Name:", person.name);  // Output: John Doe
+console.log("Age:", person.age);    // Output: 30
+console.log("Profession:", person.profession);  // Output: Software Developer
+
+// Calling object method
+console.log(person.greet());  // Output: Hello, my name is John Doe
+
+// Adding a new property
+person.country = "USA";
+console.log("Country:", person.country);  // Output: USA
+
+// Modifying an existing property
+person.age = 35;
+console.log("Updated Age:", person.age);  // Output: 35
+
+// Deleting a property
+delete person.isMarried;
+console.log("After deletion:", person); // "isMarried" will be removed
+
+    </script>
+</body>
+</html>

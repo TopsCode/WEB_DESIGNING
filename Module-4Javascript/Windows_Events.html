@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window/Document Events Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Window/Document Events Example</h1>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        // DOMContentLoaded Event: Fired when the HTML document is completely loaded and parsed (without waiting for stylesheets, images, and subframes to finish loading)
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('output').innerHTML = 'Document has been loaded and parsed!';
+        });
+
+        // Load Event: Fired when the whole page (including all images, stylesheets, and other resources) has fully loaded
+        window.addEventListener('load', function() {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + '<br>The page and all resources have fully loaded!';
+        });
+
+        // Resize Event: Fired when the browser window is resized
+        window.addEventListener('resize', function() {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + '<br>Window has been resized!';
+        });
+
+        // Scroll Event: Fired when the document is scrolled
+        window.addEventListener('scroll', function() {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + '<br>Page has been scrolled!';
+        });
+
+        // Before Unload Event: Fired when the user is about to leave the page (e.g., closing the tab or navigating away)
+        window.addEventListener('beforeunload', function(event) {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + '<br>You are about to leave the page!';
+            // Optionally, prompt the user to confirm navigation
+            event.returnValue = 'Are you sure you want to leave?';
+        });
+
+        // Keydown Event: Fired when a key is pressed down on the document
+        document.addEventListener('keydown', function(event) {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + `<br>Key pressed: ${event.key} (Key code: ${event.keyCode})`;
+        });
+
+        // Click Event: Fired when a mouse click occurs on the document
+        document.addEventListener('click', function() {
+            const output = document.getElementById('output');
+            output.innerHTML = output.innerHTML + '<br>Document has been clicked!';
+        });
+    </script>
+
+</body>
+</html>

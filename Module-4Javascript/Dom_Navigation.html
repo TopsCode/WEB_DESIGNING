@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation Example</title>
+</head>
+<body>
+
+    <h1>DOM Navigation Example</h1>
+
+    <div id="parentDiv">
+        <h2>Parent Element</h2>
+        <p id="firstChild">This is the first child element of the parent div.</p>
+        <p>This is the second child.</p>
+        <p id="thirdChild">This is the third child element of the parent div.</p>
+    </div>
+
+    <button onclick="navigateDOM()">Navigate DOM</button>
+
+    <p id="output"></p>
+
+    <script>
+        function navigateDOM() {
+            // Get the parent element (div with id 'parentDiv')
+            const parentDiv = document.getElementById('parentDiv');
+
+            // Access the first child element using childNodes
+            const firstChild = parentDiv.firstChild;
+            const output = document.getElementById("output");
+            
+            // Access the first child element that is a valid HTML node (ignoring text nodes)
+            const validFirstChild = parentDiv.firstElementChild;
+            output.innerHTML = "First valid child element: " + validFirstChild.textContent;
+
+            // Accessing the previous sibling of the third child
+            const thirdChild = document.getElementById('thirdChild');
+            const previousSibling = thirdChild.previousElementSibling;
+            output.innerHTML += "<br>Previous sibling of the third child: " + previousSibling.textContent;
+
+            // Accessing the next sibling of the first child
+            const nextSibling = firstChild.nextElementSibling;
+            output.innerHTML += "<br>Next sibling of the first child: " + nextSibling.textContent;
+
+            // Accessing the parent element of the first child
+            const parentOfFirstChild = firstChild.parentNode;
+            output.innerHTML += "<br>Parent of the first child: " + parentOfFirstChild.id;
+        }
+    </script>
+
+</body>
+</html>

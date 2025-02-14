@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. navigator.appName - Returns the name of the browser
+console.log("Browser Name:", navigator.appName); // Example: "Netscape"
+
+// 2. navigator.appVersion - Returns the version of the browser
+console.log("Browser Version:", navigator.appVersion);
+
+// 3. navigator.userAgent - Returns the user agent string for the browser
+console.log("User Agent:", navigator.userAgent);
+
+// 4. navigator.platform - Returns the platform (OS) of the browser
+console.log("Platform:", navigator.platform);
+
+// 5. navigator.language - Returns the preferred language of the browser
+console.log("Browser Language:", navigator.language);
+
+// 6. navigator.cookieEnabled - Returns true if cookies are enabled
+console.log("Cookies Enabled:", navigator.cookieEnabled); // true or false
+
+// 7. navigator.javaEnabled() - Returns true if Java is enabled
+console.log("Java Enabled:", navigator.javaEnabled()); // true or false
+
+// 8. navigator.onLine - Returns true if the browser is online
+console.log("Is Online:", navigator.onLine); // true or false
+
+// 9. navigator.geolocation - Provides access to the geolocation API for location-based services
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+        console.log("Latitude:", position.coords.latitude);
+        console.log("Longitude:", position.coords.longitude);
+    }, function(error) {
+        console.log("Geolocation Error:", error.message);
+    });
+} else {
+    console.log("Geolocation is not supported by this browser.");
+}
+
+// 10. navigator.hardwareConcurrency - Returns the number of logical processors
+console.log("Logical Processors:", navigator.hardwareConcurrency);
+
+// 11. navigator.deviceMemory - Returns the amount of device memory in gigabytes
+console.log("Device Memory (GB):", navigator.deviceMemory);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation Example</title>
+    <script>
+        function validateEmail() {
+            // Get the email input value
+            let email = document.getElementById("email").value;
+
+            // Regular expression for basic email format validation
+            let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // Test if the email matches the pattern
+            if (emailRegex.test(email)) {
+                document.getElementById("result").textContent = "Valid Email!";
+                document.getElementById("result").style.color = "green";
+            } else {
+                document.getElementById("result").textContent = "Invalid Email. Please enter a valid email address.";
+                document.getElementById("result").style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Email Validation Example</h1>
+    
+    <!-- Email input form -->
+    <input type="text" id="email" placeholder="Enter your email" />
+    <button onclick="validateEmail()">Validate Email</button>
+    
+    <!-- Result display -->
+    <p id="result"></p>
+</body>
+</html>
